@@ -1,0 +1,33 @@
+import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '@/views/HomeView.vue'
+import WeatherView from '@/views/WeatherView.vue'
+import TaskView from '@/views/TaskView.vue'
+import MovieView from '@/views/MovieView.vue'
+
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: HomeView
+    },
+    {
+      path: '/weather',
+      name: 'weather',
+      component: WeatherView
+    },
+    {
+      path: '/task',
+      name: 'task',
+      component: TaskView
+    },
+    {
+      path: '/movie',
+      name: 'movie',
+      component: MovieView
+    }
+  ]
+})
+
+export default router
