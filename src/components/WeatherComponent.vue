@@ -70,7 +70,7 @@ const dateBuilder = () => {
         <input
           type="text"
           class="cityInput"
-          placeholder="search city..."
+          placeholder="search city here..."
           v-model="city"
           @keypress="fetchWeather"
         />
